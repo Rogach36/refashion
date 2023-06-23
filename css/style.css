@@ -961,9 +961,9 @@ body {
 	.community__input {
 		padding: 20px 15px 20px;	
 		margin-bottom: 15px;	
-		font-size: 22px;
+		font-size: 21px;
 		max-width: 100%;
-		/* justify-self: center; */
+		text-align: center;
   }
   .community__button {
 	position: static;
