@@ -120,7 +120,7 @@ body {
 
 .grid-center {
 	display: grid;
-	grid-template-columns: 1fr minmax(230px, 1720px) 1fr;
+	grid-template-columns: 1fr minmax(285px, 1720px) 1fr;
 	padding: 0 15px;
 }
 
@@ -433,7 +433,6 @@ body {
 }
 .partners__row {
 	display: grid;
-	/* grid-template-rows: 1fr; */
 	grid-template-columns: repeat(auto-fit, minmax(190px, auto));	
 	align-items: center;
 	justify-items: center;
@@ -487,7 +486,7 @@ body {
 .arrivals__row {
 	grid-column: 2 / 3;
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(285px, 1fr));
 	column-gap: 90px;
 	row-gap: 50px;
 	line-height: 104%;
@@ -884,7 +883,7 @@ body {
 	padding: 141px 15px 156px;
 	background-color: #E5C643;
 	text-align: center;
-	/* justify-items: center; */
+	justify-items: center;
 	color: #FFF;
 }
 .community__title {
@@ -911,11 +910,10 @@ body {
 }
 .community__form {
 	grid-column: 2 / 3;
-	/* display: grid;
-	grid-template: 1fr / minmax(auto, 574px); */
-	/* position: relative; */
+	display: grid;
+	grid-template: 1fr / minmax(auto, 574px);
+	position: relative;
 }
-/*
 .community__input {
 	background-color: #fff;
 	padding: 27px 107px 25px 27px;
@@ -947,11 +945,11 @@ body {
 	padding: 17px 10px 15px 10px;
 	border: 1px solid #fff;
 	transition: all 0.3s ease 0s;	
-} */
-.community__form {
+}
+/*-----------------------Решение не влезающего на минимаьлных разрешениях инпута с помощью флекса*/
+/* .community__form {
 	display: flex;
-	flex-direction: column;
-	
+	flex-direction: column;	
 	align-items: center;
 }
 .community__input {
@@ -985,7 +983,7 @@ body {
 	padding: 17px 10px 15px;
 	border: 1px solid rgb(255, 255, 255);
 	transition: all 0.3s ease 0s;
-}
+} */
 .community__button:hover {
 	color: #242323;
 	background-color: #FEFEFE;
