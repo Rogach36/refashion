@@ -423,11 +423,15 @@ body {
 /**---------------------Partners--------------*/
 
 .partners {
-	background: #EBD96B;
+	background-color: #EBD96B;
+	display: grid;
+	grid-template-columns: 1fr minmax(285px, 1720px) 1fr;
+	padding: 0 15px;
 }
 .partners__cover {
 	grid-column: 2 / 3;
 	padding: 61px 80px 55px 71px;
+	/* background-color: #EBD96B; */
 	
 
 }
@@ -534,11 +538,6 @@ body {
 	letter-spacing: -0.04em;
 	color: #7F7F7F;	
 }
-@media(max-width: 420px) {
-	.arrivals__title {		
-		margin-bottom: 50px;
-  }
-}
 @media(max-width: 992px) {
 	.arrivals__title {		
 		margin-bottom: 50px;
@@ -548,6 +547,16 @@ body {
 	left: 125px;	
 }
 }
+
+@media(max-width: 420px) {
+	.arrivals__title {		
+		margin-bottom: 50px;
+  }
+  .arrivals__title::after {
+	display: none;
+}
+}
+
 /*-----------------------Payday--------------------------*/
 
 .payday {
@@ -704,6 +713,17 @@ body {
 	opacity: 0.7;
 }
 }
+
+@media(max-width: 350px){	
+.text-payday__title {
+	font-size: 57px;
+}
+.text-payday__title::after {
+	width: 270px;
+	height: 70px;
+}
+}
+
 /*------------------------------Favourite--------------------------------*/
 
 .favourite {
@@ -778,6 +798,17 @@ body {
 	height: 32px;
 	background-image: url("../img/arrivals/arrow-right.svg");
 	background-repeat: no-repeat;
+}
+
+@media(max-width: 1350px) {
+	.favourite {
+		padding-bottom: 100px;
+  }
+}
+@media(max-width: 750px) {
+	.favourite {
+		padding-bottom: 40px;
+  }
 }
 
 @media(max-width: 485px) {
@@ -856,7 +887,7 @@ body {
 	.voucher__text {
 		padding: 50px;
 		display: grid;
-		justify-items: center;
+		/* justify-items: center; */
   }
 	.text-voucher__title {		
 		font-size: 41px;
@@ -868,10 +899,20 @@ body {
 		margin-bottom: 25px;
 	}
 }
+
+@media(max-width: 750px) {
+	.voucher {
+		padding-bottom: 40px;
+  }
+}
 @media(max-width: 500px) {
 	.voucher__body {		
 		grid-template-columns: repeat(auto-fit, minmax(300px, auto));	
 	}
+	.text-voucher__app {
+		
+		justify-content: center;
+  }
 	.voucher__text {
 		padding: 25px;
   }
@@ -911,7 +952,7 @@ body {
 .community__form {
 	grid-column: 2 / 3;
 	display: grid;
-	grid-template: 1fr / minmax(auto, 574px);
+	grid-template: 1fr / minmax(285px, 574px);
 	position: relative;
 }
 .community__input {
@@ -992,7 +1033,7 @@ body {
 
 @media(max-width: 586px) {
 	.community__title {		
-		font-size: 44px;
+		font-size: 40px;
 	}
 	.community__input {
 		padding: 20px 15px 20px;	
@@ -1006,6 +1047,16 @@ body {
 	min-width: 200px;
 	justify-self: center;
   }
+}
+/* .grid-center {
+	display: grid;
+	grid-template-columns: 1fr max-content 1fr;
+	padding: 0 15px;
+	background-color: #E5C643;
+} */
+
+@media(max-width: 350px) {
+
 }
 
 /*------------------Footer------------------------*/
